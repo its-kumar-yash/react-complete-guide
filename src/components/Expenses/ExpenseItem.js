@@ -1,3 +1,5 @@
+import React from 'react';
+
 import ExpenseDate from './ExpenseDate';
 import Card from '../UI/Card';
 import './ExpenseItem.css';
@@ -13,6 +15,25 @@ function ExpenseItem(props) {
     // const year = props.date.getFullYear();
 
 
+    //Either way we can write a function for a event
+
+    // function clickHandler(){
+    //     console.log("Clicked!!!");
+    // };
+
+    // const [title, setTitle] = useState(props.title);
+
+    //create a varible to change title
+    // let title = props.title;
+
+    // const clickHandler = () => {
+    //     //state updating function
+    //     setTitle('Updated!');
+        
+    //     // title = "Updated";
+    //     console.log("Clicked!!!");
+    // };
+
     return (
         <Card className='expense-item'>
             {/* <div>
@@ -27,6 +48,7 @@ function ExpenseItem(props) {
                 <h2>{props.title}</h2>
                 <div className='expense-item__price'>${props.amount}</div>
             </div>
+
         </Card>
     );
 }
